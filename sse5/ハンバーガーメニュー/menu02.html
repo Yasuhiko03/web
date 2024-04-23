@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ACADEMY CORPORATION</title>
+  <style>
+
+.navbar-collapse{
+  display: none;
+}
+
+/*チェックボックスを非表示にする*/
+#menu-input{
+  display:none;
+}
+
+/*ラベル部分に、メニューアイコンを表示させる*/
+#menu-icon{
+  width: 54px;
+  height: 42px;
+  position: absolute;
+  top:20px;
+  right: 10px;
+  background-image: url(navi_icon.png);
+}
+
+#menu-input:checked ~ .navbar-collapse{
+  display: block;
+}
+</style>
+</head>
+<body>
+    <input id="menu-input" type="checkbox">
+    <label id="menu-icon" for="menu-input"></label>
+    <nav class="navbar-collapse">
+      <ul>
+        <li><a href="">サービス</a></li>
+        <li><a href="">会社概要</a></li>
+        <li><a href="">採用情報</a></li>
+        <li><a href="">お問い合わせ</a></li>
+      </ul>
+    </nav>
+</body>
+</html>

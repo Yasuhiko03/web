@@ -1,0 +1,204 @@
+@charset 'UTF-8';
+
+@media screen and (max-width: 640px){
+
+/* 基本設定 */
+
+body{
+  line-height: 1.5;
+  color: #222;
+  font-size: 0.85em;
+}
+main p{
+  font-size: 1.1em;
+}
+img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+a{
+  text-decoration: underline;
+  color: #222;
+}
+.hidden-sp{
+  display: none !important;
+}
+.mod-btn{
+  margin: 40px auto;
+  text-align: center;
+  font-size: 1.1em;
+  width: 80%;
+}
+.mod-btn a{
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 16px 65px;
+  text-decoration: none;
+  color: #1bb19a;
+  border: solid 1px #1bb19a;
+  border-radius: 4px;
+}
+
+/* ヘッダー */
+
+#logo{
+  width: 227px;
+  padding: 20px 0 20px 10px;
+}
+.navbar-collapse{
+  position: absolute;
+  z-index: 100;
+  top: 87px;
+  left: 0;
+  display: none;
+  float: none;
+  width: 100%;
+  background: #1bb19a;
+}
+.navbar-collapse li {
+  margin: 0 10px;
+  font-size: 14px;
+}
+.navbar-collapse li a{
+  display: block;
+  padding: 15px 0;
+  color: #fff;
+  text-decoration: none;
+  border-top: 1px solid #fff;
+}
+.navbar-collapse li:first-child a{
+  border-top: none;
+}
+#menu-input{
+  display:none;
+}
+#menu-icon{
+  width: 54px;
+  height: 42px;
+  position: absolute;
+  top:20px;
+  right: 10px;
+  background-image: url(../images/navi_icon.png);
+}
+#menu-input:checked ~ .navbar-collapse{
+  display: block;
+}
+
+/* メインビジュアル */
+
+#top-page{
+  background-image: url(../images/header_bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% 150px;
+  background-position: 50% 87px;
+}
+main{
+  clear: both;
+}
+#main-copy{
+  color: #fff;
+  font-size: 16px;
+  text-align: right;
+  clear: both;
+  padding: 70px 15px 0 0;
+  box-sizing: border-box;
+  height: 150px;
+  background-image: url(../images/main_image.png);
+  background-repeat: no-repeat;
+  background-size: auto 120px;
+  background-position: 15px 15px;
+}
+
+/* 左カラム */
+
+#contents-left,#contents-right{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 40px 10px 0 10px;
+}
+#contents-left section{
+  margin-bottom: 25px;
+  padding-bottom: 35px;
+  border-bottom: 1px solid #f4f4f4;
+}
+#contents-left h2,#contents-right h2{
+  text-align: center;
+  color: #212121;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+#contents-left h2 span,#contents-right h2 span{
+  display: block;
+  margin-top: 10px;
+  margin-left: 0;
+  letter-spacing: 1px;
+  font-size: 12px;
+  color: #b9b9b9;
+  font-family: 'Roboto', sans-serif;
+}
+#service,#seminar-list ul{
+  padding-top: 25px;
+  margin-bottom: 40px;
+  //overflow:hidden;
+}
+#service li,#seminar-list li{
+  float: left;
+  width: 48%;
+  margin: 0 4% 0 0;
+}
+#service li:last-child,#seminar-list li:last-child{
+  margin-right: 0;
+}
+#list-news{
+  line-height: 21px;
+}
+#list-news li{
+  margin-top: 15px;
+  font-size: 14px;
+}
+#list-news span{
+  display: block;
+}
+
+/* 右カラム */
+
+#contents-right h3{
+  padding: 20px 0;
+}
+#contents-right p{
+  margin-bottom: 40px;
+}
+#bnr-area{
+  padding-top: 40px;
+  margin: 40px 0;
+  border-top: solid 1px #f4f4f4;
+  overflow: hidden;
+  text-align: center;
+}
+#bnr-area li{
+  display: inline-block;
+  margin-bottom: 10px;
+  width: 50px;
+  padding: 0 10px;
+  text-align: center;
+}
+#bnr-area li:first-child{
+  width: 100%;
+  padding: 0;
+}
+
+/* フッター */
+
+footer{
+  padding: 20px 0;
+  background: #1bb19a;
+  clear: both;
+}
+footer p{
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+}
+
+}

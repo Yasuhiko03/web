@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ACADEMY CORPORATION</title>
+  <style>
+/* navタグの初期状態を非表示にする */
+.navbar-collapse{
+  display: none;
+}
+
+/* チェックボックスにチェックが入ったらnavタグをブロック表示する*/
+#menu-input:checked ~ .navbar-collapse{
+  display: block;
+}
+  </style>
+</head>
+<body>
+    <input id="menu-input" type="checkbox">
+    <label id="menu-icon" for="menu-input">ラベル</label>
+    <nav class="navbar-collapse">
+      <ul>
+        <li><a href="">サービス</a></li>
+        <li><a href="">会社概要</a></li>
+        <li><a href="">採用情報</a></li>
+        <li><a href="">お問い合わせ</a></li>
+      </ul>
+    </nav>
+</body>
+</html>
